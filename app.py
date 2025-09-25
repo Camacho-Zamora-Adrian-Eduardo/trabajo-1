@@ -36,7 +36,7 @@ def dividir(v1,v2):
     return mensaje
 
 @app.route("/multiplicar/<v1>/<v2>")
-def dividir(v1,v2):
+def mulriplicar(v1,v2):
     s = str(float(v1) * float(v2))
     mensaje = f"<h1>La multiplicacion de {v1} entre {v2} da como resultado {s}"
     return mensaje
@@ -44,8 +44,8 @@ def dividir(v1,v2):
 @app.route("/maximo/<v1>/<v2>")
 def maximo(v1,v2):
     if v1>v2:
-        mensaje = f"<h1>El numero mayo es {v1}"
-        return mensaje
+        mensaje1 = f"<h1>El numero mayo es {v1}"
+        return mensaje1
     else:
         mensaje = f"<h1>El numero mayor es {v2}"
         return mensaje
